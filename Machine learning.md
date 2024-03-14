@@ -26,16 +26,31 @@
 - Important algorithms include:
   1. k-Nearest Neighbors
   2. Linear Regression
-  3. Logistic Regression
-  4. Support Vector Machines (SVMs)
-  5. Decision Trees and Random Forests
-  6. Neural Networks
+       ```python
+    from sklearn.linear_model import LinearRegression
+    model = LinearRegression()
+   model.fit(X_train, y_train)
+  ```
+  4. Logistic Regression
+  5. Support Vector Machines (SVMs)
+  6. Decision Trees and Random Forests
+  ```python
+  from sklearn.tree import DecisionTreeClassifier
+  model = DecisionTreeClassifier()
+  model.fit(X_train, y_train)
+  ```
+  7. Neural Networks
 
 ## Unsupervised Learning
 - Training data is unlabeled.
 - Important algorithms include:
   1. Clustering
      - K-Means
+       ```python
+  from sklearn.cluster import KMeans
+  model = KMeans(n_clusters=3)
+  model.fit(X)
+  ```
      - DBSCAN
      - Hierarchical Cluster Analysis (HCA)
   2. Anomaly detection and novelty detection
