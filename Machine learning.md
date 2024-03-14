@@ -32,8 +32,13 @@
    model.fit(X_train, y_train)
   ```
   4. Logistic Regression
-  5. Support Vector Machines (SVMs)
-  6. Decision Trees and Random Forests
+   ``` python
+   from sklearn.linear_model import LogisticRegression
+   model = logcalregression()
+   model.fit(X_train , y_train)
+   ```
+  6. Support Vector Machines (SVMs)   
+  8. Decision Trees and Random Forests
    ``` python
   from sklearn.tree import DecisionTreeClassifier
   model = DecisionTreeClassifier()
@@ -58,6 +63,11 @@
      - Isolation Forest
   3. Visualization and dimensionality reduction
      - Principal Component Analysis (PCA)
+  ``` python
+  from sklearn.decomposition import PCA
+  pca = PCA(n_components=2)
+  reduced_X = pca.fit_transform(X)
+  ```
      - Kernel PCA
      - Locally Linear Embedding (LLE)
      - t-Distributed Stochastic Neighbor Embedding (t-SNE)
