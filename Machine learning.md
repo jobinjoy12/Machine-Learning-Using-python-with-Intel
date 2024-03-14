@@ -26,7 +26,7 @@
 - Important algorithms include:
   1. k-Nearest Neighbors
   2. Linear Regression
-       ```python
+   ``` python
     from sklearn.linear_model import LinearRegression
     model = LinearRegression()
    model.fit(X_train, y_train)
@@ -34,7 +34,7 @@
   4. Logistic Regression
   5. Support Vector Machines (SVMs)
   6. Decision Trees and Random Forests
-  ```python
+   ``` python
   from sklearn.tree import DecisionTreeClassifier
   model = DecisionTreeClassifier()
   model.fit(X_train, y_train)
@@ -46,7 +46,7 @@
 - Important algorithms include:
   1. Clustering
      - K-Means
-       ```python
+    ``` python
   from sklearn.cluster import KMeans
   model = KMeans(n_clusters=3)
   model.fit(X)
